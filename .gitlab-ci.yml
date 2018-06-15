@@ -1,4 +1,4 @@
-image: danrspencer/node-flow
+image: touchlay/node-flow
 
 before_script:
   - npm install
