@@ -1,4 +1,4 @@
-image: nownabe/node-flow
+image: danrspencer/node-flow
 
 before_script:
   - npm install

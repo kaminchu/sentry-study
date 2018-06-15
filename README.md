@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.com/kmchu/sentry-study/badges/master/pipeline.svg)](https://gitlab.com/kmchu/sentry-study/commits/master)
+[![coverage report](https://gitlab.com/kmchu/sentry-study/badges/master/coverage.svg)](https://gitlab.com/kmchu/sentry-study/commits/master)
 # Sentry Study
 Sentryの使い方覚えるためのお勉強用
 
