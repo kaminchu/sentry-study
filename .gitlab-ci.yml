@@ -24,7 +24,7 @@ flow:
 test:
   stage: test
   script:
-    - npm run test
+    - npm run coverage
 
 pages:
   stage: deploy
