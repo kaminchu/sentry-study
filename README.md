@@ -9,18 +9,22 @@ Sentryの使い方覚えるためのお勉強用
 
 ### Prerequisites
 
-動作させるために、node環境が必要です
+動作させるために、node&yarn環境が必要です
 
 ```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 ```
 
 ### Installing
 
 
 ```
-npm install
+yarn install
 ```
 
 ## Running the tests
@@ -32,7 +36,7 @@ npm install
 [jest](https://facebook.github.io/jest/ja/)を使ったテストを実行できます
 
 ```
-npm run test
+yarn test
 ```
 
 ### lint
@@ -40,7 +44,7 @@ npm run test
 [ESLint](https://eslint.org/)を使ったlintを実行できます
 
 ```
-npm run lint
+yarn lint
 ```
 
 ### flow
@@ -48,7 +52,7 @@ npm run lint
 [flow](https://flow.org/)を使った型チェックを実行できます
 
 ```
-npm run flow
+yarn flow
 ```
 
 ## Development
@@ -58,14 +62,13 @@ npm run flow
 ### local環境
 localでサーバを立ち上げて、動かすことができます
 ```
-npm start
+yarn start
 ```
 
 ### flow-typed
 新しいパッケージを導入した場合は、flowに認識させる必要があります
 ```
 npx flow-typed install [導入したパッケージ名]@[バージョン]
-
 ```
 
 ## Deployment

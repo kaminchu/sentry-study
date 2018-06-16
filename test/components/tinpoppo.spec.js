@@ -1,12 +1,12 @@
 // @flow
 import React from "react";
-import Root from "../../src/js/components/root";
+import Tinpoppo from "../../src/js/components/tinpoppo";
 import renderer from "react-test-renderer";
 
-describe("components/root", () => {
+describe("components/tinpoppo", () => {
   test("snapshot test", () => {
     const component = renderer.create(
-      <Root />,
+      <Tinpoppo />,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
