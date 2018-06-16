@@ -62,3 +62,6 @@ typings/
 
 # artifact
 public
+
+# for yarn
+package-lock.json
