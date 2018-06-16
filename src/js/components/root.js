@@ -1,9 +1,6 @@
 // @flow
 import React from "react";
+import Top from "./top";
 
-const Root = () => (
-  <div>
-    Hello, World!
-  </div>
-);
+const Root = () => <Top/>;
 export default Root;
